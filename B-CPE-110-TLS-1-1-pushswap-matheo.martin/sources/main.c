@@ -29,7 +29,7 @@ int main (char **av, int ac)
         l_a_begin->nb = av[2];
     l_a_end = l_a_begin;
     l_a_end->next = l_a_begin;
-    if (set_list(l_a_begin, av, ac, status) == EXIT_FAILURE)
+    if (init_list(l_a_begin, av, ac, status) == EXIT_FAILURE)
         return(84);
     sort(l_a_begin, l_a_begin, status);
     free(l_a_begin);

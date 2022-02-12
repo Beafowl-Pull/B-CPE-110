@@ -5,7 +5,7 @@
 ## Makefile
 ##
 
-SRC = $(shell find ./lib/my -type f -name '*.c')
+SRC = $(shell find . -type f -name '*.c')
 
 OBJ = $(SRC:.c=.o)
 
@@ -17,8 +17,8 @@ all: $(NAMEL)
 
 $(NAMEL): $(OBJ)
 	ar rc $(NAMEL) $(OBJ)
-	cp ./lib/my/$(NAMEI) ./include/$(NAMEI)
-	cp ./$(NAMEL) ./lib/my/$(NAMEL)
+	cp $(NAMEI) ../../include/$(NAMEI)
+	cp $(NAMEL) ../$(NAMEL)
 
 clean : $(shell rm -f $(OBJ))
 
