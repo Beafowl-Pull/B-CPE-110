@@ -1,6 +1,6 @@
 # B-CPE-110
 
-##Grade C
+## Grade C
 
 - antman: 21%
 - bsq: 97%
